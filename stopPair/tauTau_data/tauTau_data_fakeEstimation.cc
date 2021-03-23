@@ -36,17 +36,17 @@ int main()
         std::printf("Warning!!! \n");
         std::printf("Invalid configuration. Using default options. \n\n");
         
-        process = "Tau_Run2016H-17Jul2018-v1_MINIAOD";
-        dir = "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016H-17Jul2018-v1_MINIAOD_tauTau_fakeEstimation";
-        otherInfoDir = "tauTau_data";
-        sourceFileName = "sourceFiles/Tau_Run2016H-17Jul2018-v1_MINIAOD/Tau_Run2016H-17Jul2018-v1_MINIAOD_custom.txt";
-        era = "2016";
-        
-        //process = "Tau_Run2017F-31Mar2018-v1_MINIAOD";
-        //dir = "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2017F-31Mar2018-v1_MINIAOD_tauTau_fakeEstimation";
+        //process = "Tau_Run2016H-17Jul2018-v1_MINIAOD";
+        //dir = "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016H-17Jul2018-v1_MINIAOD_tauTau_fakeEstimation";
         //otherInfoDir = "tauTau_data";
-        //sourceFileName = "sourceFiles/Tau_Run2017F-31Mar2018-v1_MINIAOD/Tau_Run2017F-31Mar2018-v1_MINIAOD_custom.txt";
-        //era = "2017";
+        //sourceFileName = "sourceFiles/Tau_Run2016H-17Jul2018-v1_MINIAOD/Tau_Run2016H-17Jul2018-v1_MINIAOD_custom.txt";
+        //era = "2016";
+        //
+        process = "Tau_Run2017F-31Mar2018-v1_MINIAOD";
+        dir = "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2017F-31Mar2018-v1_MINIAOD_tauTau_fakeEstimation";
+        otherInfoDir = "tauTau_data";
+        sourceFileName = "sourceFiles/Tau_Run2017F-31Mar2018-v1_MINIAOD/Tau_Run2017F-31Mar2018-v1_MINIAOD_custom.txt";
+        era = "2017";
         
         syst_name = "";
         syst_type = Common::SYST_CENTRAL;

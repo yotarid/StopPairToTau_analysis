@@ -41,17 +41,17 @@ int main()
         std::printf("Warning!!! \n");
         std::printf("Invalid configuration. Using default options. \n\n");
         
-        process = "TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_Summer16";
-        dir = "ttbar_mc/output_analyzed/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_Summer16_tauTau_analysis";
-        otherInfoDir = "ttbar_mc";
-        sourceFileName = "sourceFiles/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_Summer16/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_Summer16_custom.txt";
-        era = "2016";
+        // process = "TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_Summer16";
+        // dir = "ttbar_mc/output_analyzed/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_Summer16_tauTau_analysis";
+        // otherInfoDir = "ttbar_mc";
+        // sourceFileName = "sourceFiles/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_Summer16/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_Summer16_custom.txt";
+        // era = "2016";
         
-        //process = "TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8_Fall17";
-        //dir = "ttbar_mc/output_analyzed/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8_Fall17_tauTau_analysis";
-        //otherInfoDir = "ttbar_mc";
-        //sourceFileName = "sourceFiles/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8_Fall17/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8_Fall17_custom.txt";
-        //era = "2017";
+        process = "TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8_Fall17";
+        dir = "ttbar_mc/output_analyzed/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8_Fall17_tauTau_analysis";
+        otherInfoDir = "ttbar_mc";
+        sourceFileName = "sourceFiles/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8_Fall17/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8_Fall17_custom.txt";
+        era = "2017";
         
         scaleVariationIndex_str = "0";
     }
