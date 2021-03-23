@@ -171,6 +171,7 @@ namespace FakeEstimation_tauTau
         char fileName_bTagCalib[Common::str_len];
         BTagCalibration bTagCalib;
         
+        std::vector <std::string> v_tauPromptRateFile;
         std::vector <std::string> v_tauFakeRateFile;
         
         // Era
@@ -180,6 +181,10 @@ namespace FakeEstimation_tauTau
             //sprintf(fileName_pileUp_data, "resources/pileup/pileUpDistribution_Cert_271036-284044_13TeV_23Sep2016ReReco_Collisions16_JSON.txt.root");
             
             sprintf(fileName_bTagCalib, "resources/bTagging/2016/DeepJet_2016LegacySF_WP_V1.csv");
+            
+            v_tauPromptRateFile = {
+                "ttbar_mc/output_tauIdIsoEfficiency/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_Summer16_tauIdIsoEfficiency/custom_all_tauIdIsoEfficiency.root"
+            };
             
             v_tauFakeRateFile = {
                 "tauTau_data/output_tauTau_fakeRate/Tau_Run2016B-17Jul2018_ver2-v1_MINIAOD_tauTau_fakeRate/custom_all_fakeRate_tauTau.root",
@@ -197,6 +202,10 @@ namespace FakeEstimation_tauTau
             sprintf(fileName_pileUp_data, "resources/pileup/pileUpDistribution_Cert_294927-306462_13TeV_EOY2017ReReco_Collisions17_JSON.root");
             
             sprintf(fileName_bTagCalib, "resources/bTagging/2017/DeepFlavour_94XSF_WP_V3_B_F.csv");
+            
+            v_tauPromptRateFile = {
+                "ttbar_mc/output_tauIdIsoEfficiency/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8_Fall17_tauIdIsoEfficiency/custom_all_tauIdIsoEfficiency.root"
+            };
             
             v_tauFakeRateFile = {
                 "tauTau_data/output_tauTau_fakeRate/Tau_Run2017B-31Mar2018-v1_MINIAOD_tauTau_fakeRate/custom_all_fakeRate_tauTau.root",
@@ -224,15 +233,14 @@ namespace FakeEstimation_tauTau
             "TightIsolationMVArun2v1DBdR03oldDMwLT_againstElectronLooseMVA6_againstMuonLoose3/tau_vis_pT_vs_eta_gen"
         );*/
         
+        
+        
         TauPromptAndFakeRate::TauPromptAndFakeRate *tauPandFobject = new TauPromptAndFakeRate::TauPromptAndFakeRate(
-            {
-                "ttbar_mc/output_tauIdIsoEfficiency/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_Summer16_tauIdIsoEfficiency/custom_all_tauIdIsoEfficiency.root"
-            },
+            v_tauPromptRateFile,
             "TightDeepTau2017v2p1VSjet_LooseDeepTau2017v2p1VSe_TightDeepTau2017v2p1VSmu/tau_pT_vs_DM_reco",
             "LooseDeepTau2017v2p1VSjet_LooseDeepTau2017v2p1VSe_TightDeepTau2017v2p1VSmu/tau_pT_vs_DM_reco",
             
             v_tauFakeRateFile,
-            
             "tightLoose_dR03_SS/tau_pT_vs_DM_reco_tightLoose_dR03_SS",
             "looseLoose_dR03_SS/tau_pT_vs_DM_reco_looseLoose_dR03_SS",
             "tightTight_dR03_SS/tau_pT_vs_DM_reco_tightTight_dR03_SS",
@@ -842,27 +850,27 @@ namespace FakeEstimation_tauTau
                 
                 
                 //
-                FakeEstimation_tauTau::analyze_reco(
-                    input_data,
-                    v_runInfo_OS_baselineDYCR.at(iRun)->output_reco,
-                    "OS",
-                    v_runInfo_OS_baselineDYCR.at(iRun)->v_tau1_isolation, v_runInfo_OS_baselineDYCR.at(iRun)->v_tau1_antiIsolation,
-                    v_runInfo_OS_baselineDYCR.at(iRun)->v_tau2_isolation, v_runInfo_OS_baselineDYCR.at(iRun)->v_tau2_antiIsolation,
-                    v_runInfo_OS_baselineDYCR.at(iRun)->expression,
-                    isMC,
-                    era,
-                    //v_runInfo_OS_baselineDYCR.at(iRun)->m_eventSelection,
-                    v_runInfo_OS_baselineDYCR.at(iRun)->eventSelectionStr,
-                    &bTagCalib,
-                    fileName_bTaggingEfficiency,
-                    tauEffSFobject,
-                    tauPandFobject,
-                    v_eventWeight_nJetBin,
-                    syst_name,
-                    syst_type
-                );
-                
-                printf("\n");
+                //FakeEstimation_tauTau::analyze_reco(
+                //    input_data,
+                //    v_runInfo_OS_baselineDYCR.at(iRun)->output_reco,
+                //    "OS",
+                //    v_runInfo_OS_baselineDYCR.at(iRun)->v_tau1_isolation, v_runInfo_OS_baselineDYCR.at(iRun)->v_tau1_antiIsolation,
+                //    v_runInfo_OS_baselineDYCR.at(iRun)->v_tau2_isolation, v_runInfo_OS_baselineDYCR.at(iRun)->v_tau2_antiIsolation,
+                //    v_runInfo_OS_baselineDYCR.at(iRun)->expression,
+                //    isMC,
+                //    era,
+                //    //v_runInfo_OS_baselineDYCR.at(iRun)->m_eventSelection,
+                //    v_runInfo_OS_baselineDYCR.at(iRun)->eventSelectionStr,
+                //    &bTagCalib,
+                //    fileName_bTaggingEfficiency,
+                //    tauEffSFobject,
+                //    tauPandFobject,
+                //    v_eventWeight_nJetBin,
+                //    syst_name,
+                //    syst_type
+                //);
+                //
+                //printf("\n");
             }
             
             printf("\n\n");
@@ -892,10 +900,10 @@ namespace FakeEstimation_tauTau
                 v_runInfo_OS_baselineSRB.at(iRun)->output_reco->writeData();
                 
                 
-                dirName = v_runInfo_OS_baselineDYCR.at(iRun)->term;
-                output_analyzed->mkdir(dirName.c_str());
-                output_analyzed->cd(dirName.c_str());
-                v_runInfo_OS_baselineDYCR.at(iRun)->output_reco->writeData();
+                //dirName = v_runInfo_OS_baselineDYCR.at(iRun)->term;
+                //output_analyzed->mkdir(dirName.c_str());
+                //output_analyzed->cd(dirName.c_str());
+                //v_runInfo_OS_baselineDYCR.at(iRun)->output_reco->writeData();
                 
                 
                 // Release memory
