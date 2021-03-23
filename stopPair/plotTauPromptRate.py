@@ -16,7 +16,7 @@ import CMS_lumi
 import tdrstyle
 
 
-era = "2016"
+era = "2017"
 #era = "2017"
 
 
@@ -36,8 +36,10 @@ d_histName = {
     },
     
     "2017": {
-        "L": "LooseIsolationMVArun2017v2DBoldDMdR0p3wLT2017_againstElectronLooseMVA6_againstMuonLoose3/tau_pT_vs_DM_reco",
-        "T": "TightIsolationMVArun2017v2DBoldDMdR0p3wLT2017_againstElectronLooseMVA6_againstMuonLoose3/tau_pT_vs_DM_reco",
+        # "L": "LooseIsolationMVArun2017v2DBoldDMdR0p3wLT2017_againstElectronLooseMVA6_againstMuonLoose3/tau_pT_vs_DM_reco",
+        # "T": "TightIsolationMVArun2017v2DBoldDMdR0p3wLT2017_againstElectronLooseMVA6_againstMuonLoose3/tau_pT_vs_DM_reco",
+        "L": "LooseDeepTau2017v2p1VSjet_LooseDeepTau2017v2p1VSe_TightDeepTau2017v2p1VSmu/tau_pT_vs_DM_reco",
+        "T": "TightDeepTau2017v2p1VSjet_LooseDeepTau2017v2p1VSe_TightDeepTau2017v2p1VSmu/tau_pT_vs_DM_reco",
     },
 }
 

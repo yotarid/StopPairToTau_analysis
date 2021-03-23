@@ -17,7 +17,7 @@ import CMS_lumi
 import tdrstyle
 
 
-era = "2016"
+era = "2017"
 
 outDir = "plots/tauFakeRate/%s" %(era)
 os.system("mkdir -p " + outDir)
