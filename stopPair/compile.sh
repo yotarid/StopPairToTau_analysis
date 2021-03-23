@@ -18,7 +18,7 @@ ROOT_FLAGS=`root-config --libs --cflags --ldflags`" -lRooFitCore"
 CLHEP_FLAGS="-I/cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/clhep/2.3.4.2/include -L/cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/clhep/2.3.4.2/lib -lCLHEP -ldl -Wl,-rpath /cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/clhep/2.3.4.2/lib"
 BOOST_FLAGS="-I/cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/boost/1.57.0-ikhhed/include -L/cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/boost/1.57.0-ikhhed/lib -ldl -Wl,-rpath /cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/boost/1.57.0-ikhhed/lib"
 
-CUSTOM_HEADER_PATH="/home/sobhatta/t3store3/stopPairToTau/analysis/CMSSW_10_5_0/src/stopPair"
+CUSTOM_HEADER_PATH="/nfs/dust/cms/user/yotarid/SUSY/CMSSW_10_5_0/src/StopPairToTau_analysis/stopPair"
 CUSTOM_HEADERS=`find $CUSTOM_HEADER_PATH/HeaderFiles | grep ".cc$"`
 
 GPP_FLAGS="-std=c++11 -O2"

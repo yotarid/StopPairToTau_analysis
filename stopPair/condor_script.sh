@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DIR="/home/sobhatta/t3store3/stopPairToTau/analysis/CMSSW_10_5_0/src/stopPair"
+DIR="/nfs/dust/cms/user/yotarid/SUSY/CMSSW_10_5_0/src/StopPairToTau_analysis/stopPair"
 
 cd $DIR
 
@@ -9,10 +9,12 @@ export CPATH=$CPATH:$DIR
 
 # Proxy path must be common to all nodes
 # Default path is /tmp/, but thatis not common for all nodes
-export X509_USER_PROXY=/home/sobhatta/proxies/x509up_u56529
+export X509_USER_PROXY=/nfs/dust/cms/user/yotarid/proxies/x509up_u35340
 
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 
+module use -a /afs/desy.de/group/cms/modulefiles/ 
+module load cmssw
 eval cmsenv
 
 #echo "Creating voms-proxy..."

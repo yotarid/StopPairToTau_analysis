@@ -17,5 +17,9 @@ getenv = True
 #on_exit_hold = (ExitBySignal == True) || (ExitCode != 0)
 
 #max_retries = 2
++RequestRuntime = 432000
+
+# memory in MiB e.g 512, 1GB etc ...
+#Request_Memory = 6 
 
 queue

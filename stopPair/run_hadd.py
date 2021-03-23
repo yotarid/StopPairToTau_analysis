@@ -12,17 +12,18 @@ import time
 ##################################################
 username = getpass.getuser()
 
-if (username != "sobhatta") :
-    
-    print "WARNING!!! Probably running where you're NOT supposed to."
-    print "Exiting."
-    exit(1)
+#if (username != "sobhatta") :
+#    
+#    print "WARNING!!! Probably running where you're NOT supposed to."
+#    print "Exiting."
+#    exit(1)
 
 ##################################################
 ##################################################
 
 
 #abspath = "/home/sobhatta/t3store2/PhD/analysis/CMSSW_8_0_20/src/stopPair"
+#abspath = "/home/soham/t3store3/stopPairToTau/analysis/CMSSW_10_5_0/src/stopPair"
 abspath = os.getcwd()
 
 
@@ -103,94 +104,76 @@ outputDir_analyzed["2016"] = [
     #"elMu_data/output_analyzed/MuonEG_Run2016H-07Aug17-v1_MINIAOD",
     
     
-    ##"muMu_data/output_analyzed/SingleMuon_Run2016B-18Apr2017_ver2-v1_MINIAOD",
-    ##"muMu_data/output_analyzed/SingleMuon_Run2016D-18Apr2017-v1_MINIAOD",
-    ##"muMu_data/output_analyzed/SingleMuon_Run2016E-18Apr2017-v1_MINIAOD",
-    ##"muMu_data/output_analyzed/SingleMuon_Run2016F-18Apr2017-v2_MINIAOD",
-    ##"muMu_data/output_analyzed/SingleMuon_Run2016G-18Apr2017-v1_MINIAOD",
-    ##"muMu_data/output_analyzed/SingleMuon_Run2016H-18Apr2017-v1_MINIAOD",
-    ##"muMu_data/output_analyzed/SingleMuon_Run2016C-18Apr2017-v1_MINIAOD",
-    
-    #"muMu_data/output_analyzed/SingleMuon_Run2016B-07Aug17_ver2-v1_MINIAOD",
-    #"muMu_data/output_analyzed/SingleMuon_Run2016C-07Aug17-v1_MINIAOD",
-    #"muMu_data/output_analyzed/SingleMuon_Run2016D-07Aug17-v1_MINIAOD",
-    #"muMu_data/output_analyzed/SingleMuon_Run2016E-07Aug17-v1_MINIAOD",
-    #"muMu_data/output_analyzed/SingleMuon_Run2016F-07Aug17-v1_MINIAOD",
-    #"muMu_data/output_analyzed/SingleMuon_Run2016G-07Aug17-v1_MINIAOD",
-    #"muMu_data/output_analyzed/SingleMuon_Run2016H-07Aug17-v1_MINIAOD",
+    "muMu_data/output_analyzed/SingleMuon_Run2016B-17Jul2018_ver2-v1_MINIAOD",
+    "muMu_data/output_analyzed/SingleMuon_Run2016C-17Jul2018-v1_MINIAOD",
+    "muMu_data/output_analyzed/SingleMuon_Run2016D-17Jul2018-v1_MINIAOD",
+    "muMu_data/output_analyzed/SingleMuon_Run2016E-17Jul2018-v1_MINIAOD",
+    "muMu_data/output_analyzed/SingleMuon_Run2016F-17Jul2018-v1_MINIAOD",
+    "muMu_data/output_analyzed/SingleMuon_Run2016G-17Jul2018-v1_MINIAOD",
+    "muMu_data/output_analyzed/SingleMuon_Run2016H-17Jul2018-v1_MINIAOD",
     
     
-    #"muTau_data/output_analyzed/SingleMuon_Run2016B-07Aug17_ver2-v1_MINIAOD",
-    #"muTau_data/output_analyzed/SingleMuon_Run2016C-07Aug17-v1_MINIAOD",
-    #"muTau_data/output_analyzed/SingleMuon_Run2016D-07Aug17-v1_MINIAOD",
-    #"muTau_data/output_analyzed/SingleMuon_Run2016E-07Aug17-v1_MINIAOD",
-    #"muTau_data/output_analyzed/SingleMuon_Run2016F-07Aug17-v1_MINIAOD",
-    #"muTau_data/output_analyzed/SingleMuon_Run2016G-07Aug17-v1_MINIAOD",
-    #"muTau_data/output_analyzed/SingleMuon_Run2016H-07Aug17-v1_MINIAOD",
+    #"muTau_data/output_analyzed/SingleMuon_Run2016B-17Jul2018_ver2-v1_MINIAOD",
+    #"muTau_data/output_analyzed/SingleMuon_Run2016C-17Jul2018-v1_MINIAOD",
+    #"muTau_data/output_analyzed/SingleMuon_Run2016D-17Jul2018-v1_MINIAOD",
+    #"muTau_data/output_analyzed/SingleMuon_Run2016E-17Jul2018-v1_MINIAOD",
+    #"muTau_data/output_analyzed/SingleMuon_Run2016F-17Jul2018-v1_MINIAOD",
+    #"muTau_data/output_analyzed/SingleMuon_Run2016G-17Jul2018-v1_MINIAOD",
+    #"muTau_data/output_analyzed/SingleMuon_Run2016H-17Jul2018-v1_MINIAOD",
     
     
-    ##"tauTau_data/output_analyzed/Tau_Run2016B-18Apr2017_ver2-v1_MINIAOD",
-    ##"tauTau_data/output_analyzed/Tau_Run2016C-18Apr2017-v1_MINIAOD",
-    ##"tauTau_data/output_analyzed/Tau_Run2016D-18Apr2017-v1_MINIAOD",
-    ##"tauTau_data/output_analyzed/Tau_Run2016E-18Apr2017-v1_MINIAOD",
-    ##"tauTau_data/output_analyzed/Tau_Run2016F-18Apr2017-v1_MINIAOD",
-    ##"tauTau_data/output_analyzed/Tau_Run2016G-18Apr2017-v1_MINIAOD",
-    ##"tauTau_data/output_analyzed/Tau_Run2016H-18Apr2017-v1_MINIAOD",
+    #"tauTau_data/output_analyzed/Tau_Run2016B-17Jul2018_ver2-v1_MINIAOD",
+    #"tauTau_data/output_analyzed/Tau_Run2016C-17Jul2018-v1_MINIAOD",
+    #"tauTau_data/output_analyzed/Tau_Run2016D-17Jul2018-v1_MINIAOD",
+    #"tauTau_data/output_analyzed/Tau_Run2016E-17Jul2018-v1_MINIAOD",
+    #"tauTau_data/output_analyzed/Tau_Run2016F-17Jul2018-v1_MINIAOD",
+    #"tauTau_data/output_analyzed/Tau_Run2016G-17Jul2018-v1_MINIAOD",
+    #"tauTau_data/output_analyzed/Tau_Run2016H-17Jul2018-v1_MINIAOD",
     
-    #"tauTau_data/output_analyzed/Tau_Run2016B-07Aug17_ver2-v1_MINIAOD",
-    #"tauTau_data/output_analyzed/Tau_Run2016C-07Aug17-v1_MINIAOD",
-    #"tauTau_data/output_analyzed/Tau_Run2016D-07Aug17-v1_MINIAOD",
-    #"tauTau_data/output_analyzed/Tau_Run2016E-07Aug17-v1_MINIAOD",
-    #"tauTau_data/output_analyzed/Tau_Run2016F-07Aug17-v1_MINIAOD",
-    #"tauTau_data/output_analyzed/Tau_Run2016G-07Aug17-v1_MINIAOD",
-    #"tauTau_data/output_analyzed/Tau_Run2016H-07Aug17-v1_MINIAOD",
-    
-    
-    #"muTau_data/output_analyzed/SingleMuon",
     
     #"stopPair_mc/output_analyzed/SMS-T8bbstausnu_XCha0p5_XStau0p25_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
     #"stopPair_mc/output_analyzed/SMS-T8bbstausnu_XCha0p5_XStau0p5_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
     #"stopPair_mc/output_analyzed/SMS-T8bbstausnu_XCha0p5_XStau0p75_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
     
-    #"DYJetsToLL_mc/output_analyzed/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
-    #"DYJetsToLL_mc/output_analyzed/DY1JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
-    #"DYJetsToLL_mc/output_analyzed/DY2JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
-    #"DYJetsToLL_mc/output_analyzed/DY3JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
-    #"DYJetsToLL_mc/output_analyzed/DY4JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
-    #
-    #"WJetsToLNu_mc/output_analyzed/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
-    #"WJetsToLNu_mc/output_analyzed/W1JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
-    #"WJetsToLNu_mc/output_analyzed/W2JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
-    #"WJetsToLNu_mc/output_analyzed/W3JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
-    #"WJetsToLNu_mc/output_analyzed/W4JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
-    #
-    #"VH_mc/output_analyzed/ZH_HToBB_ZToLL_M125_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
-    #"VH_mc/output_analyzed/WH_HToBB_WToLNu_M125_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
-    #
-    #"VV_mc/output_analyzed/VVTo2L2Nu_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
-    #"VV_mc/output_analyzed/WWTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
-    #"VV_mc/output_analyzed/ZZTo4L_13TeV-amcatnloFXFX-pythia8_Summer16",
-    #"VV_mc/output_analyzed/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
-    #"VV_mc/output_analyzed/WZJToLLLNu_TuneCUETP8M1_13TeV-amcnlo-pythia8_Summer16",
-    #"VV_mc/output_analyzed/WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
-    #"VV_mc/output_analyzed/WZTo1L3Nu_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
-    #"VV_mc/output_analyzed/WZTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
-    #
-    #"WG_mc/output_analyzed/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_Summer16",
-    #"WG_mc/output_analyzed/WGstarToLNuMuMu_012Jets_13TeV-madgraph_Summer16",
-    #"WG_mc/output_analyzed/WGstarToLNuEE_012Jets_13TeV-madgraph_Summer16",
-    #
-    #"singleTop_mc/output_analyzed/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1_Summer16",
-    #"singleTop_mc/output_analyzed/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1_Summer16",
-    #"singleTop_mc/output_analyzed/ST_t-channel_antitop_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1_Summer16",
-    #"singleTop_mc/output_analyzed/ST_t-channel_top_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1_Summer16",
-    #
-    #"ttbar_mc/output_analyzed/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_Summer16",
-    #
-    #"TTX_mc/output_analyzed/TTZToQQ_TuneCUETP8M1_13TeV-amcatnlo-pythia8_Summer16",
-    #"TTX_mc/output_analyzed/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_Summer16",
-    #"TTX_mc/output_analyzed/TTWJetsToQQ_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_Summer16",
-    #"TTX_mc/output_analyzed/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_Summer16",
+    "DYJetsToLL_mc/output_analyzed/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
+    "DYJetsToLL_mc/output_analyzed/DY1JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
+    "DYJetsToLL_mc/output_analyzed/DY2JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
+    "DYJetsToLL_mc/output_analyzed/DY3JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
+    "DYJetsToLL_mc/output_analyzed/DY4JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
+    
+    "WJetsToLNu_mc/output_analyzed/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
+    "WJetsToLNu_mc/output_analyzed/W1JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
+    "WJetsToLNu_mc/output_analyzed/W2JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
+    "WJetsToLNu_mc/output_analyzed/W3JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
+    "WJetsToLNu_mc/output_analyzed/W4JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16",
+    
+    "VH_mc/output_analyzed/ZH_HToBB_ZToLL_M125_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
+    "VH_mc/output_analyzed/WH_HToBB_WToLNu_M125_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
+    
+    "VV_mc/output_analyzed/VVTo2L2Nu_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
+    "VV_mc/output_analyzed/WWTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
+    "VV_mc/output_analyzed/ZZTo4L_13TeV-amcatnloFXFX-pythia8_Summer16",
+    "VV_mc/output_analyzed/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
+    "VV_mc/output_analyzed/WZJToLLLNu_TuneCUETP8M1_13TeV-amcnlo-pythia8_Summer16",
+    "VV_mc/output_analyzed/WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
+    "VV_mc/output_analyzed/WZTo1L3Nu_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
+    "VV_mc/output_analyzed/WZTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8_Summer16",
+    
+    "WG_mc/output_analyzed/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_Summer16",
+    "WG_mc/output_analyzed/WGstarToLNuMuMu_012Jets_13TeV-madgraph_Summer16",
+    "WG_mc/output_analyzed/WGstarToLNuEE_012Jets_13TeV-madgraph_Summer16",
+    
+    "singleTop_mc/output_analyzed/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1_Summer16",
+    "singleTop_mc/output_analyzed/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1_Summer16",
+    "singleTop_mc/output_analyzed/ST_t-channel_antitop_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1_Summer16",
+    "singleTop_mc/output_analyzed/ST_t-channel_top_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1_Summer16",
+    
+    "ttbar_mc/output_analyzed/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_Summer16",
+    
+    "TTX_mc/output_analyzed/TTZToQQ_TuneCUETP8M1_13TeV-amcatnlo-pythia8_Summer16",
+    "TTX_mc/output_analyzed/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_Summer16",
+    "TTX_mc/output_analyzed/TTWJetsToQQ_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_Summer16",
+    "TTX_mc/output_analyzed/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_Summer16",
     
     #"QCD_mc/output_analyzed/QCD_Pt_3200toInf_TuneCUETP8M1_13TeV_pythia8",
     #"QCD_mc/output_analyzed/QCD_Pt_15to30_TuneCUETP8M1_13TeV_pythia8",
@@ -332,13 +315,21 @@ outputDir_tauFakeEstimation["2016"] = [
     ##"tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016G-18Apr2017-v1_MINIAOD",
     ##"tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016H-18Apr2017-v1_MINIAOD",
     
-    "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016B-07Aug17_ver2-v1_MINIAOD",
-    "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016C-07Aug17-v1_MINIAOD",
-    "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016D-07Aug17-v1_MINIAOD",
-    "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016E-07Aug17-v1_MINIAOD",
-    "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016F-07Aug17-v1_MINIAOD",
-    "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016G-07Aug17-v1_MINIAOD",
-    "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016H-07Aug17-v1_MINIAOD",
+    ##"tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016B-07Aug17_ver2-v1_MINIAOD",
+    ##"tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016C-07Aug17-v1_MINIAOD",
+    ##"tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016D-07Aug17-v1_MINIAOD",
+    ##"tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016E-07Aug17-v1_MINIAOD",
+    ##"tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016F-07Aug17-v1_MINIAOD",
+    ##"tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016G-07Aug17-v1_MINIAOD",
+    ##"tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016H-07Aug17-v1_MINIAOD",
+    
+    "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016B-17Jul2018_ver2-v1_MINIAOD",
+    "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016C-17Jul2018-v1_MINIAOD",
+    "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016D-17Jul2018-v1_MINIAOD",
+    "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016E-17Jul2018-v1_MINIAOD",
+    "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016F-17Jul2018-v1_MINIAOD",
+    "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016G-17Jul2018-v1_MINIAOD",
+    "tauTau_data/output_tauTau_fakeEstimation/Tau_Run2016H-17Jul2018-v1_MINIAOD",
 ]
 
 outputDir_tauFakeEstimation["2017"] = [
@@ -535,7 +526,7 @@ elif (option == "2a") :
     suffix = "_elMu_analysis"
 
 elif (option == "2b") :
-    
+    #Goes to files specified upwards, appends suffix and hadds the files    
     outputDir = outputDir_analyzed[era]
     outputFileName  = "custom_all_analyzed.root"
     suffix = "_tauTau_analysis"
@@ -548,6 +539,7 @@ elif (option == "2b") :
     #suffix = "_tauTau_analysis_baselineSRB_METleq50_nFakeTauGeq1"
     #suffix = "_tauTau_analysis_DYCR"
     #suffix = "_tauTau_analysis_DYCR_withZpTreweighting"
+    #suffix = "_tauTau_analysis_with-elMuVeto"
     l_syst = l_syst_tauTau_analysis
     l_scaleVarIndex = l_tauTau_scaleVarIndex
 
@@ -561,9 +553,9 @@ elif (option == "2d") :
     
     outputDir = outputDir_analyzed[era]
     outputFileName  = "custom_all_analyzed.root"
-    #suffix = "_muMu_analysis"
+    suffix = "_muMu_analysis"
     #suffix = "_muMu_analysis_DYCR"
-    suffix = "_muMu_analysis_DYCR_withZpTreweighting"
+    #suffix = "_muMu_analysis_DYCR_withZpTreweighting"
 
 elif (option == "3a") :
     
@@ -609,10 +601,22 @@ def doNothing() :
     return 1
 
 
+def getStatus(l_process) :
+    
+    return [runProc.poll() for runProc in l_process]
+
+
+def nRunning(l_process) :
+    
+    l_status = getStatus(getStatus)
+    
+    nRunning = sum([(runProc.poll() == None) for runProc in l_runProcess])
+
+
 l_command = []
 l_process = []
 l_runProcess = []
-nWorkerMax = 20
+nWorkerMax = 10 
 
 
 for iDir in range(0, len(outputDir)) :
@@ -648,18 +652,19 @@ for iDir in range(0, len(outputDir)) :
             print command
             os.system(command)
             
-            #haddCompressionStr = ""
-            haddCompressionStr = "-f0"
+            haddOptions = ""
+            #haddOptions = "-cachesize 2g"
+            
+            haddOptions = "%s %s" %(haddOptions, "-f0")
             
             #if ("data" in outputDir[iDir]) :
             #    
-            #    haddCompressionStr = "-f0"
+            #    haddOptions = "-f0"
             
-            haddLogFile = "%s/hadd_%s%s.log" %(haddLogDir, outputDir[iDir][outputDir[iDir].rfind("/")+1:],suffix_mod)
+            haddLogFile = "%s/%s/hadd_%s%s.log" %(abspath, haddLogDir, outputDir[iDir][outputDir[iDir].rfind("/")+1:],suffix_mod)
             
-            #command = "hadd -f0 " + outputFile + " `find " + outputDir[iDir] + suffix_mod + " | grep .root$ | grep -v %s | sort -V`" %(outputFileName)
-            command = "hadd %s %s `find %s/%s%s | grep .root$ | grep -v %s | sort -V` &> %s" %(
-                haddCompressionStr,
+            command = "hadd %s %s `find %s/%s%s | grep .root$ | grep -v %s | sort -V` > %s 2>&1" %(
+                haddOptions,
                 outputFile,
                 abspath, outputDir[iDir], suffix_mod,
                 outputFileName,
@@ -695,6 +700,9 @@ for iDir in range(0, len(outputDir)) :
             if (sum([(runProc.poll() == None) for runProc in l_runProcess]) < nWorkerMax) :
                 
                 print "Submitting:", command
+                print getStatus(l_runProcess)
+                
+                l_command.append(command)
                 
                 l_runProcess.append(
                     subprocess.Popen(command, shell = True)
@@ -709,3 +717,21 @@ while (sum([(runProc.poll() == None) for runProc in l_runProcess])) :
     
     #time.sleep(30)
     doNothing()
+
+
+l_retCode = numpy.array(getStatus(l_runProcess), dtype = int)
+
+print "\n\n"
+print "="*50
+print "Summary \n"
+
+for iCode, retCode in enumerate(l_retCode) :
+    
+    if (retCode) :
+        
+        print "Error (return value %d) in operation: \n%s" %(retCode, l_command[iCode])
+        print ""
+
+print "\n"
+print "Encountered error in %d/%d operations." %(sum(l_retCode != 0), len(l_retCode))
+
